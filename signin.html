@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Sign in</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="logo/logo-1/favicon.png" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+     <link rel="stylesheet" href="css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+     <link rel="stylesheet" href="css/styles.css" />
+    <style type="text/css">
+      .coverx{
+        background-image: url('img/bgi1.jpg');
+        height: 100vh;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+    </style>
+</head>
+<body>
+
+   <!-- Navbar -->
+    <nav class="text-success navbar navbar-expand-lg bg-light navbar-light fixed-top">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="index.html"><img src="logo/logo-1/logot.png" alt="Logo" style="width:42.5px; height:42,5px;"></a>
+
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0"> -->
+            <ul class="navbar-nav navbar-collapse justify-content-center mb-2 mb-lg-0">
+            
+
+            <!-- Link -->
+            <li class="nav-item">
+              <a class="nav-link active text-success" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-success" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-success" href="#">Contact us</a>
+            </li>
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-success" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+              <!-- Dropdown menu -->
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">Farmers Store</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Markets</a>
+                </li>
+                 <li>
+                  <a class="dropdown-item" href="#">Vacancies</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active text-success" href="#">Help</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-success" href="signin.html">Login</a>
+            </li>
+          </ul>
+
+          <!-- Icons -->
+          <ul class="navbar-nav d-flex flex-row me-1">
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="#"><i class="flag flag-lk"></i></a>
+            </li>
+             <!-- Icon dropdown log-in-->
+            <li class="nav-item me-3 me-lg-0 dropdown">
+            <a
+            class="nav-link dropdown-toggle text-succes"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+           >
+           <i class="fas fa-user"></i>
+           </a>
+           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+           <li><a class="dropdown-item" href="#">My profile</a></li>
+          <li><a class="dropdown-item" href="#">Settings</a></li>
+          <li><a class="dropdown-item" href="#">Logout</a></li>
+           </ul>
+        </ul>
+   
+          <!-- Search -->
+          <form class="w-auto">
+            <!-- <input type="search" class="form-control" placeholder="Type query" aria-label="Search"> -->
+            <div class="input-group">
+              <div class="form-outline">
+                <input id="search-focus" type="search" id="form1" class="form-control" />
+                <label class="form-label" for="form1">Search</label>
+              </div>
+              <button type="button" class="btn btn-success">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+
+
+
+
+    <!-- header&slids-->
+<div class="bg-image d-flex justify-content-center align-items-center bg-transparent coverx">
+  <div class="mask" style="background-color: rgba(60, 60, 100, 0.25);">
+       
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <img src="logo/logo-1/logot.png" class="img-fluid" alt="Logo" width="500" height="500">
+          </div>
+        
+      </div>
+  </div>
+  
+<!--/header&slids-->
+
+
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#Market">
+  Market
+</button>
+<button type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#Store">
+  Store
+</button>
+<button type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#Vacancies">
+  Vacancies
+</button>
+
+<!-- Modal -->
+<div class="modal top fade" id="Market" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-mdb-backdrop="static" data-mdb-keyboard="true">
+  <div class="modal-dialog modal-xl  modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Market</h5>
+        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+        <div class="container">
+  
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="card text-center hover-shadow">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img src="./img/cargillsnew.png" class="img-fluid" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </a>
+                </div>
+              
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card's content.
+                  </p>
+              
+                  <a href="https://cargillsonline.com/Web/Product?IC=MjM=&NC=VmVnZXRhYmxlcw=="><button type="button" class="btn btn-primary">Button</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card text-center hover-shadow">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img src="./img/Keells.jpg" class="img-fluid" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </a>
+                </div>
+              
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card's content.
+                  </p>
+              
+                  <a href="https://www.keellssuper.com/product/2/16/114"><button type="button" class="btn btn-primary">Button</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card text-center hover-shadow">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img src="./img/snapcartnew.png" class="img-fluid" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </a>
+                </div>
+              
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card's content.
+                  </p>
+              
+                  <a href="http://snapcart.lk/category/531"><button type="button" class="btn btn-primary">Button</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+<div class="modal top fade" id="Store" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-mdb-backdrop="static" data-mdb-keyboard="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Store</h5>
+        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+        <div class="container">
+  
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="card text-center hover-shadow">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img src="./img/hayleysnew2.png" class="img-fluid" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </a>
+                </div>
+              
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card's content.
+                  </p>
+              
+                  <a href="https://www.hayleysagriculture.com/main_category.php?business_id=3"><button type="button" class="btn btn-primary">Button</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card text-center hover-shadow">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img src="./img/dimo.png" class="img-fluid" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </a>
+                </div>
+              
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card's content.
+                  </p>
+              
+                  <a href="https://www.dimolanka.com/agriculture/agri-machinery/"><button type="button" class="btn btn-primary">Button</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card text-center hover-shadow">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img src="./img/hayleysnew2.png" class="img-fluid" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </a>
+                </div>
+              
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card's content.
+                  </p>
+              
+                  <a href="https://www.hayleysagriculture.com/main_category.php?business_id=5"><button type="button" class="btn btn-primary">Button</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+<div class="modal top fade" id="Vacancies" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-mdb-backdrop="static" data-mdb-keyboard="true">
+  <div class="modal-dialog modal-xl  modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+        <div class="container p-5">
+  
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="card text-center ">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img src="./img/ikman.png" class="img-fluid" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </a>
+                </div>
+              
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card's content.
+                  </p>
+              
+                  <button type="button" class="btn btn-primary">Button</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card text-center ">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.jpg" class="img-fluid" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </a>
+                </div>
+              
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card's content.
+                  </p>
+              
+                  <button type="button" class="btn btn-primary">Button</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card text-center ">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.jpg" class="img-fluid" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </a>
+                </div>
+              
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card's content.
+                  </p>
+              
+                  <button type="button" class="btn btn-primary">Button</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+
+        <!-- Footer -->
+<footer class="bg-success text-white text-center text-lg-start">
+
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a
+        class="btn btn-success btn-floating m-1"
+        style="background-color: #3b5998;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a
+        class="btn btn-success btn-floating m-1"
+        style="background-color: #55acee;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a
+        class="btn btn-success btn-floating m-1"
+        style="background-color: #dd4b39;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a
+        class="btn btn-success btn-floating m-1"
+        style="background-color: #ac2bac;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a
+        class="btn btn-success btn-floating m-1"
+        style="background-color: #0082ca;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Footer Content</h5>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+          molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+          voluptatem veniam, est atque cumque eum delectus sint!
+        </p>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#!" class="text-dark">Link 1</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Link 2</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Link 3</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Link 4</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-0">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="text-dark">Link 1</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Link 2</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Link 3</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Link 4</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 183, 74,1);">
+    © 2020 Copyright:
+    <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="./js/signin.js"></script>
+    <script type="text/javascript" src="./js/mdb.min.js.map"></script>
+    <script type="text/javascript" src="./js/popup.js"></script>
+</body>
+</html>
+
+
+
+  
+  
+  
+  
+  
+      <!--<div class="container py-5 my-5">
+          <p class="h1 mb-5">Log in</p>
+          <form class="row g-4 needs-validation" novalidate>
+            <div class="col-md-12">
+              <div class="form-outline">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="validationCustom01"
+                  value=""
+                  required
+                />
+                <label for="validationCustom01" class="form-label">Email</label>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please enter your email address.</div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-outline">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="validationCustom01"
+                  value=""
+                  required
+                />
+                <label for="validationCustom01" class="form-label">Password</label>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please enter your password.</div>
+              </div>
+            </div>
+            <div class="col-md-12">
+                  <label class="text-center">Don't have an account?</label>
+          <a href="signup.html">Register now</a>
+                </div>
+            <div class="row gap-5">
+              <div class="col-2 mt-5">
+                <button class="btn btn-danger" type="reset">Cancel</button>
+              </div>
+              <div class="col-2 mt-5">
+                <button class="btn btn-success" type="submit">Log in</button>
+              </div>
+            </div>
+            </form>
+          </div> -->

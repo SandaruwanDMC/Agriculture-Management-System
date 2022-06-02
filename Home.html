@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Agriculture Management System</title>
+
+    <!-- MDB icon -->
+
+    <link rel="icon" href="logo/logo-1/favicon.png" type="image/x-icon" />
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+
+    <!-- Google Fonts Roboto -->
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    />
+
+    <!-- MDB -->
+
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- CSS -->
+
+    <style type="text/css">
+
+      .coverx{
+        background-image: url('img/bgi1.jpg');
+        height: 100vh;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+
+      .shadow-custom {
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .25), 0 3px 13px 7px rgba(0, 0, 0, 0.29) !important;
+      }
+
+    </style>
+
+  </head>
+
+  <body class="bg-custom" onload="initClock()">
+    
+    <!-- Navbar -->
+
+    <nav class="text-success navbar navbar-expand-lg bg-light navbar-light fixed-top">
+
+      <!-- Container wrapper -->
+
+      <div class="container-fluid">
+
+        <!-- Navbar brand -->
+
+        <a class="navbar-brand" href="index.html"><img src="logo/logo-1/logot1.png" alt="Logo"></a>
+
+        <!-- Toggle button -->
+
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav navbar-collapse justify-content-center mb-2 mb-lg-0">
+
+            <!-- Links -->
+
+            <li class="nav-item">
+              <a class="nav-link active text-success" href="Home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-success" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-success" href="#ContactUs">Contact us</a>
+            </li>
+
+            <!-- Dropdown -->
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-success" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+
+              <!-- Dropdown menu -->
+
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#Advisors">Advisors</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" data-mdb-toggle="modal" data-mdb-target="#Store">Farmers Store</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" data-mdb-toggle="modal" data-mdb-target="#Market">Markets</a>
+                </li>
+                 <li>
+                  <a class="dropdown-item disabled" href="#">Vacancies</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-success" href="#">Help</a>
+            </li>
+          </ul>
+          
+          <!-- Clock -->
+            <div class="border border-success py-1 px-3 rounded-3 mx-5">
+                  <center>
+                    <div class="calender">
+                      <span id="day">Day</span>,
+                      <span id="month">Month</span>
+                      <span id="date">00</span>,
+                      <span id="year">Year</span>
+                    </div>
+                    <div>
+                      <span id="hour">00</span>:
+                      <span id="minutes">00</span>:
+                      <span id="seconds">00</span>
+                      <span id="period">AM</span>
+                    </div>
+                  </center>
+            </div>
+          <!-- / Clock -->
+
+          <!-- Icons -->
+
+          <ul class="navbar-nav d-flex flex-row me-1">
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="#" data-mdb-toggle="modal" data-mdb-target="#staticBackdrop"><i class="fas fa-user-plus"></i></a>
+            </li>
+          </ul>
+          
+   
+          <!-- Search -->
+          <form class="w-auto">
+            <div class="input-group">
+              <div class="form-outline">
+                <input id="search-focus" type="search" id="form1" class="form-control" />
+                <label class="form-label" for="form1">Search</label>
+              </div>
+              <button type="button" class="btn btn-success">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+
+    
+   
+    <!--header&slids-->
+
+    <div class="bg-image d-flex justify-content-center align-items-center bg-transparent coverx">
+      <div class="mask" style="background-color: rgba(60, 60, 100, 0.25);">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <img src="logo/logo-1/logot.png" class="img-fluid " alt="Logo" width="500" height="500"></li>
+        </div>
+      </div>
+    </div>
+
+    <!--/header&slids-->
+
+    <!-- Feature Start-->
+            
+    <div class="bg-success text-white container-fluid text-center py-4 align-items-center justify-content-center">
+      <div class="row mx6">
+        <div class="col-lg-2 col-md-12">
+          <i class="fas fa-leaf fa-2x pb-2"></i>
+          <h6>Modern Farming</h6>
+        </div>
+        <div class="col-lg-2 col-md-12">
+          <i class="fas fa-briefcase fa-2x pb-2"></i>
+          <h6>Quality Services</h6>
+        </div>
+        <div class="col-lg-2 col-md-12">
+          <i class="fas fa-tractor fa-2x pb-2"></i>
+          <h6>Modern Tools</h6>
+        </div>
+        <div class="col-lg-2 col-md-12">
+          <i class="fas fa-shopping-cart fa-2x pb-2"></i>
+          <h6>Online Markets</h6>
+        </div>
+        <div class="col-lg-2 col-md-12">
+          <i class="fas fa-chalkboard-teacher fa-2x pb-2"></i>
+          <h6>Free Advicing</h6>
+        </div>
+        <div class="col-lg-2 col-md-12">
+          <i class="fas fa-hands-helping fa-2x pb-2"></i>
+          <h6>24/7 Support</h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- / Feature Start-->
+            
+    <!--about us-->
+
+    <div class=" container-fluid d-flex justify-content-center">
+      <div class="row text-center justify-content-center mx6 pb6">
+
+        <!--slids-->
+
+        <div class="col-lg-5 pt62">
+          <div
+            id="carouselExampleCrossfade"
+            class="carousel slide carousel-fade shadow-1"
+            data-mdb-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-mdb-target="#carouselExampleCrossfade"
+                data-mdb-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-mdb-target="#carouselExampleCrossfade"
+                data-mdb-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-mdb-target="#carouselExampleCrossfade"
+                data-mdb-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="img/wall1x.jpeg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/wall2x.jpeg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/wall3x.jpeg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-mdb-target="#carouselExampleCrossfade"
+              data-mdb-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-mdb-target="#carouselExampleCrossfade"
+              data-mdb-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <!--/ slids-->
+
+        <div class="col-lg-7 pt6"><br>
+          <div class="ml6">
+            <h3>About Us</h3>
+            <p class="pt-4 pb-3">
+              We found this organization to help our farmers to improve their productivity and profitability. With the help of this system, they can find the best market to sell their products, and they can purchase tools and seeds directly from the seller. Because of that, they can save their time and expenses. And also, we have given them the ability to contact government organizations via this website. And we hope to uplift this service by providing facility to advertise their job vacancies and hire labors...
+            </p>
+            <button type="button" class="btn btn-success">Read More</button>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+    <!--/ about us-->
+
+
+    <!--service-->
+
+    <div class="bg-light container-fluid d-flex pb6 pt-5">
+      <div class="row justify-content-center align-items-center text-center mx6 pb-2">
+        <h3>Our Services</h3>
+
+        <div class="col-md-4 pt-5">
+          <div class="hover-shadow">
+            <div class="card shadow-1 rounded-0 h-100">
+              <div class="bg-image ripple hover-zoom rounded-0" data-mdb-ripple-color="light">
+                <img
+                  src="img/vg1x.jpg"
+                  class="img-fluid"
+                />
+                <a href="#!" data-mdb-toggle="modal" data-mdb-target="#Market">
+                  <div class="mask" style="background-color: rgba(0, 0, 0, 0.05)">
+                    <div class="d-flex justify-content-center align-items-center h-100">
+                      <p class="text-white mb-0"><i class="fas fa-pepper-hot fa-2x"></i></p>
+                    </div>
+                  </div>
+                  <div class="hover-overlay">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.125)"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Markets</h5>
+                <p class="card-text mx-3">
+                You can find a market with best peices for your products from here.
+                </p>
+                <a href="#!" class="btn btn-success"  data-mdb-toggle="modal" data-mdb-target="#Market">Explore</a>
+              </div>
+            </div>  
+          </div>
+        </div>
+      
+        <div class="col-md-4 pt-5">
+          <div class="hover-shadow">
+            <div class="card shadow-1 rounded-0 h-100">
+              <div class="bg-image ripple hover-zoom rounded-0" data-mdb-ripple-color="light">
+                <img
+                  src="img/t1x.jpeg"
+                  class="img-fluid"
+                />
+                <a href="#!" data-mdb-toggle="modal" data-mdb-target="#Store">
+                  <div class="mask" style="background-color: rgba(0, 0, 0, 0.05)">
+                    <div class="d-flex justify-content-center align-items-center h-100">
+                      <p class="text-white mb-0"><i class="fas fa-seedling fa-2x"></i></p>
+                    </div>
+                  </div>
+                  <div class="hover-overlay">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.125)"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Stores</h5>
+                <p class="card-text mx-3">
+                  You can find seeds, fertilizers, chemicals, tools, and much more from here.
+                </p>
+                <a href="#!" class="btn btn-success"  data-mdb-toggle="modal" data-mdb-target="#Store">Explore</a>
+              </div>
+            </div>	
+          </div>
+        </div>
+
+        <div class="col-md-4 pt-5">
+          <div class="hover-shadow">
+            <div class="card shadow-1 rounded-0 h-100">
+              <div class="bg-image ripple hover-zoom rounded-0" data-mdb-ripple-color="light">
+                <img
+                  src="img/w6x.jpg"
+                  class="img-fluid"
+                />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(0, 0, 0, 0.05)">
+                    <div class="d-flex justify-content-center align-items-center h-100">
+                      <p class="text-white mb-0"><i class="fas fa-briefcase fa-2x"></i></p>
+                    </div>
+                  </div>
+                  <div class="hover-overlay">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.125)"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Vacancies</h5>
+                <p class="card-text mx-3">
+                  You can post your job vacancies here and hire workers for your farm.
+                </p>
+                <a href="#!" class="btn btn-success disabled" onclick="document.location='#'">Coming Soon...!!!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div> 
+
+    <!-- / service -->
+
+    <!-- join now -->
+            
+    <div class="bg-success text-white container-fluid text-center py-3 align-items-center justify-content-center">
+      <div class="row mx6">
+        <div class="col-lg-5 justify-content-center align-items-center d-flex  my-3 gap-1">
+          <div class="col-md-4">
+            <i class="fas fa-leaf fa-2x py-2"></i>
+            <h4>95</h4>
+            <h6>Total Farmers</h6>
+          </div>
+          <div class="col-md-4">
+            <i class="fas fa-shopping-cart fa-2x py-2"></i>
+            <h4>188</h4>
+            <h6>Total Customers</h6>
+          </div>
+          <div class="col-md-4">
+            <i class="fas fa-briefcase fa-2x py-2"></i>
+            <h4>66</h4>
+            <h6>Total Wokers</h6>
+          </div>
+        </div>
+        <div class="col-lg-7 justify-content-center align-items-center">
+          <div class="ml6 my-3">
+            <h3>Join with us now!</h3>
+            <p class="my-4">
+              You're newbie or still dosen't have an agro account ?<br>
+              Don't you worry, create your accout now! We will send you <br>  
+              all details about our upcoming products, tools, kits and<br> 
+              also about their prices, discounts and offers
+            </p>
+            <button type="button" class="btn btn-white text-success" data-mdb-toggle="modal" data-mdb-target="#staticBackdrop">Create now</button>   
+          </div>  
+        </div>
+      </div>
+    </div>
+            
+    <!-- / join now-->
+
+    <!--advice-->
+
+    <div class=" container-fluid pb6 pt-5" id="Advisors">
+      <div class="row justify-content-center align-items-center text-center mx6">
+        <h3>Meet Our Experts</h3>
+
+        <div class="col-lg-6 pt-5 ">
+          <div class="hover-shadow">
+            <div class="card h-100 shadow-2">
+              <div class="row g-0 justify-content-center align-items-center ">
+                <div class="col-md-5">
+                  <img
+                    src="img/a1.jpg"
+                    alt="..."
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body mx-1">
+                    <h5 class="card-title">Jonny English</h5>
+                    <p class="card-text">
+                    He is a well expeirienced farmer. He won the no1 farmer's award last year.
+                    </p>
+                    <a href="#!" class="btn btn-success" data-mdb-toggle="modal" data-mdb-target="#contactx">Contact</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 pt-5 ">
+          <div class="hover-shadow">
+            <div class="card h-100 shadow-2">
+              <div class="row g-0 justify-content-center align-items-center ">
+                <div class="col-md-5">
+                  <img
+                    src="img/a4.png"
+                    alt="..."
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body mx-1">
+                    <h5 class="card-title">W.M Chaan</h5>
+                    <p class="card-text">
+                    She is the seinior agricultural advisor in agriculture department.
+                    </p>
+                    <a href="#!" class="btn btn-success" data-mdb-toggle="modal" data-mdb-target="#contactx">Contact</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-lg-6 pt-5">
+          <div class="hover-shadow">
+            <div class="card h-100 shadow-2">
+              <div class="row g-0 justify-content-center align-items-center ">
+                <div class="col-md-5">
+                  <img
+                    src="img/a2.jpg"
+                    alt="..."
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body mx-2">
+                    <h5 class="card-title">Gayal Jayawaradane</h5>
+                    <p class="card-text">
+                      He is a marketing advisor. He will help to solve your marketing problems.
+                    </p>
+                    <a href="#!" class="btn btn-success" data-mdb-toggle="modal" data-mdb-target="#contactx">Contact</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 pt-5">
+          <div class="hover-shadow">
+            <div class="card h-100 shadow-2">
+              <div class="row g-0 justify-content-center align-items-center ">
+                <div class="col-md-5">
+                  <img
+                    src="img/a3.jpg"
+                    alt="..."
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body mx-1">
+                    <h5 class="card-title">Rose De Slive</h5>
+                    <p class="card-text">
+                      She is a young farmer with morden technology and also she work as advisor
+                    </p>
+                    <a href="#!" class="btn btn-success" data-mdb-toggle="modal" data-mdb-target="#contactx">Contact</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!--/ advice -->
+
+    <!-- Map and Contact Form -->
+
+    <div class=" Container d-flex justify-content-center align-items-center" style="height: auto;">
+	    <div class="row mx6 pb6 ">
+
+        <!-- map -->
+
+	      <div class="d-flex justify-content-center col-xl-5 mt-5 mapx">
+          <iframe class="contact-form-border" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3249.317014536007!2d80.03960604471995!3d6.8214713654256816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe00173ca58c59819!2sNSBM%20Green%20University%20RECREATION%20CENTER!5e0!3m2!1sen!2slk!4v1620052992436!5m2!1sen!2slk"  width="100%" height="100%" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <!-- map/ -->
+
+        <div class="container col-xl-7 pt-5" id="ContactUs">
+  	      <div class="ml6x">
+            <h3 align="center" class="mb-5">Contact Form</h3>
+            <form class="row g-3 needs-validation" novalidate>
+
+              <!-- Name input -->
+
+              <div class="col-md-6">
+                <div class="form-outline mb-4">
+                  <input type="text" id="form4Example1" class="form-control" required />
+                  <label class="form-label" for="form4Example1">Name</label>
+                  <div class="valid-feedback">Valid!</div>
+                    <div class="invalid-feedback">Please enter your name.</div>
+                  </div>
+                </div>
+      
+              <!-- Email input -->
+
+              <div class="col-md-6">
+                <div class="form-outline mb-4">
+                  <input type="email" id="form4Example2" class="form-control" required />
+                  <label class="form-label" for="form4Example2">Email address</label>
+                  <div class="valid-feedback">Valid!</div>
+                  <div class="invalid-feedback">Please enter your email address.</div>
+                </div>
+              </div>
+
+              <!-- Subject input -->
+
+              <div class="col-md-6">
+                <div class="form-outline mb-4">
+                  <input type="text" id="form4Example1" class="form-control" required />
+                  <label class="form-label" for="form4Example1">Subject Input</label>
+                  <div class="valid-feedback">Valid!</div>
+                  <div class="invalid-feedback">Please enter the subject.</div>
+                </div>
+              </div>
+
+              <!-- Contact Number -->
+
+              <div class="col-md-6">
+                <div class="form-outline mb-4">
+                  <input type="text" id="form4Example1" class="form-control" required />
+                  <label class="form-label" for="form4Example1">Contact Number</label>
+                  <div class="valid-feedback">Valid!</div>
+                  <div class="invalid-feedback">Please enter your contact number.</div>
+                </div>
+              </div>
+      
+              <!-- Message input -->
+
+              <div class="col-md-12">
+                <div class="form-outline mb-4">
+                  <textarea class="form-control" id="form4Example3" rows="4" required></textarea>
+                  <label class="form-label" for="form4Example3">Message</label>
+                  <div class="valid-feedback">Valid!</div>
+                  <div class="invalid-feedback">Please enter the message.</div>
+                </div>
+              </div>
+      
+              <!-- Checkbox -->
+
+              <div class="form-check d-flex justify-content-center mb-4">
+                <input
+                  class="form-check-input me-2"
+                  type="checkbox"
+                  value=""
+                  id="form4Example4"
+                />
+                <label class="form-check-label" for="form4Example4">
+                  Send me a copy of this message
+                </label>
+              </div>
+      
+              <!-- Submit button -->
+
+              <button type="submit" class="btn btn-success btn-block btn-lg">Send</button>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- / Map and Contact Form -->
+
+    <!-- Footer -->
+
+      <footer class="bg-success text-white text-center text-lg-start">
+
+        <!-- Grid container -->
+
+          <div class="container p-4 pb-0">
+
+            <!-- Section: Social media -->
+
+            <section class="mb-4">
+
+              <!-- Facebook -->
+
+              <a
+                class="btn btn-success btn-floating m-1"
+                style="background-color: #3b5998;"
+                href="#!"
+                role="button"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+
+              <!-- Twitter -->
+
+              <a
+                class="btn btn-success btn-floating m-1"
+                style="background-color: #55acee;"
+                href="#!"
+                role="button"
+                ><i class="fab fa-twitter"></i
+              ></a>
+
+              <!-- Google -->
+              
+              <a
+                class="btn btn-success btn-floating m-1"
+                style="background-color: #dd4b39;"
+                href="#!"
+                role="button"
+                ><i class="fab fa-google"></i
+              ></a>
+
+              <!-- Instagram -->
+
+              <a
+                class="btn btn-success btn-floating m-1"
+                style="background-color: #ac2bac;"
+                href="#!"
+                role="button"
+                ><i class="fab fa-instagram"></i
+              ></a>
+
+              <!-- Linkedin -->
+
+              <a
+                class="btn btn-success btn-floating m-1"
+                style="background-color: #0082ca;"
+                href="#!"
+                role="button"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+
+            </section>
+
+            <!-- / Section: Social media -->
+
+          </div>
+
+        <!-- / Grid container -->
+
+        <!-- Grid container -->
+
+          <div class="container p-4">
+
+            <!-- Grid row -->
+
+              <div class="row">
+
+                <!-- Grid column -->
+
+                  <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Footer Content</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                      molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+                      voluptatem veniam, est atque cumque eum delectus sint!
+                    </p>
+                  </div>
+
+                <!-- / Grid column -->
+
+                <!--Grid column-->
+
+                  <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
+                    <ul class="list-unstyled mb-0">
+                      <li>
+                        <a href="#!" class="text-white">Home</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="text-white">About Us</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="text-white">Contact Us</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="text-white">Services</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                <!-- / Grid column -->
+
+                <!-- Grid column -->
+
+                  <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
+                    <ul class="list-unstyled mb-0">
+                      <li>
+                        <a href="#!" class="text-white">Link-1</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="text-white">Link-2</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="text-white">Link-3</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="text-white">Link-4</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                <!-- / Grid column -->
+
+              </div>
+
+            <!-- / Grid row -->
+
+          </div>
+
+        <!-- / Grid container -->
+
+        <!-- Copyright -->
+
+          <div class="text-center p-3" style="background-color: rgba(0, 183, 74,1);">
+            © 2021 Copyright&nbsp;:&nbsp;&nbsp;&nbsp;
+            <a class="text-dark" href="https://www.google.lk/">The Prodigies</a>
+          </div>
+
+        <!-- / Copyright -->
+
+      </footer>
+
+    <!-- / Footer -->
+
+    <!-- Modal 1 -->
+
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-mdb-backdrop="static"
+        data-mdb-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-primary" id="staticBackdropLabel">Member Area</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-mdb-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+
+                <!-- Pills navs -->
+
+                  <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <a
+                        class="nav-link active"
+                        id="tab-login"
+                        data-mdb-toggle="pill"
+                        href="#pills-login"
+                        role="tab"
+                        aria-controls="pills-login"
+                        aria-selected="true"
+                        >Login
+                      </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a
+                        class="nav-link"
+                        id="tab-register"
+                        data-mdb-toggle="pill"
+                        href="#pills-register"
+                        role="tab"
+                        aria-controls="pills-register"
+                        aria-selected="false"
+                        >Register
+                      </a>
+                    </li>
+                  </ul>
+
+                <!-- / Pills navs -->
+                
+                <!-- Pills content -->
+
+                  <div class="tab-content">
+                    <div
+                      class="tab-pane fade show active"
+                      id="pills-login"
+                      role="tabpanel"
+                      aria-labelledby="tab-login"
+                    >
+                      <form class="row g-3 needs-validation" novalidate>
+                        <div class="text-center mb-3">
+                          <p>Sign in with:</p>
+
+                          <button type="button" class="btn btn-primary btn-floating mx-1">
+                            <i class="fab fa-facebook-f"></i>
+                          </button>
+                  
+                          <button type="button" class="btn btn-primary btn-floating mx-1">
+                            <i class="fab fa-google"></i>
+                          </button>
+                  
+                          <button type="button" class="btn btn-primary btn-floating mx-1">
+                            <i class="fab fa-twitter"></i>
+                          </button>
+
+                        </div>
+                
+                        <p class="text-center">or:</p>
+                
+                        <!-- Email input -->
+
+                        <div class="col-md-12">
+                          <div class="form-outline mb-4">
+                            <input type="email" id="loginName" class="form-control" required/>
+                            <label class="form-label" for="loginName">Email or username</label>
+                            <div class="valid-feedback">Valid!</div>
+                            <div class="invalid-feedback">Please enter your email or username.</div>
+                          </div>
+                        </div>
+                
+                        <!-- Password input -->
+
+                        <div class="col-md-12">
+                          <div class="form-outline mb-4">
+                            <input type="password" id="loginPassword" class="form-control" required/>
+                            <label class="form-label" for="loginPassword">Password</label>
+                            <div class="valid-feedback">Valid!</div>
+                            <div class="invalid-feedback">Please enter your password.</div>
+                          </div>
+                        </div>
+                
+                        <!-- 2 column grid layout -->
+
+                        <div class="row mb-4">
+                          <div class="col-md-6 d-flex justify-content-center">
+
+                            <!-- Checkbox -->
+
+                            <div class="form-check mt-3 mb-3 mb-md-0">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="loginCheck"
+                                checked
+                              />
+                              <label class="form-check-label" for="loginCheck"> Remember me </label>
+                            </div>
+                          </div>
+                
+                          <div class="col-md-6 d-flex justify-content-center mt-3">
+
+                            <!-- Simple link -->
+
+                            <a href="#!">Forgot password?</a>
+                          </div>
+                        </div>
+                
+                        <!-- Submit button -->
+
+                        <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+                
+                        <!-- Register buttons -->
+
+                        <div class="text-center">
+                          <p>Not a member? <a href="#!">Register</a></p>
+                        </div>
+                      </form>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="pills-register"
+                      role="tabpanel"
+                      aria-labelledby="tab-register"
+                    >
+                      <form class="row g-3 needs-validation" novalidate>
+                        <div class="text-center mb-3">
+                          <p>Sign up with:</p>
+
+                          <button type="button" class="btn btn-primary btn-floating mx-1">
+                            <i class="fab fa-facebook-f"></i>
+                          </button>
+                  
+                          <button type="button" class="btn btn-primary btn-floating mx-1">
+                            <i class="fab fa-google"></i>
+                          </button>
+                  
+                          <button type="button" class="btn btn-primary btn-floating mx-1">
+                            <i class="fab fa-twitter"></i>
+                          </button>
+                        </div>
+                  
+                        <p class="text-center">or:</p>
+                  
+                        <!-- Name input -->
+
+                        <div class="col-md-12">
+                          <div class="form-outline mb-4">
+                            <input type="text" id="registerName" class="form-control" required />
+                            <label class="form-label" for="registerName">Name</label>
+                            <div class="valid-feedback">Valid!</div>
+                            <div class="invalid-feedback">Please enter your name.</div>
+                          </div>
+                        </div>
+                  
+                        <!-- Username input -->
+
+                        <div class="col-md-12">
+                          <div class="form-outline mb-4">
+                            <input type="text" id="registerUsername" class="form-control" required />
+                            <label class="form-label" for="registerUsername">Username</label>
+                            <div class="valid-feedback">Valid!</div>
+                            <div class="invalid-feedback">Please enter your username.</div>
+                          </div>
+                        </div>
+                  
+                        <!-- Email input -->
+
+                        <div class="col-md-12">
+                          <div class="form-outline mb-4">
+                            <input type="email" id="registerEmail" class="form-control" required />
+                            <label class="form-label" for="registerEmail">Email</label>
+                            <div class="valid-feedback">Valid!</div>
+                            <div class="invalid-feedback">Please enter your email address.</div>
+                          </div>
+                        </div>
+                  
+                        <!-- Password input -->
+
+                        <div class="col-md-12">
+                          <div class="form-outline mb-4">
+                            <input type="password" id="registerPassword" class="form-control" required />
+                            <label class="form-label" for="registerPassword">Password</label>
+                            <div class="valid-feedback">Valid!</div>
+                            <div class="invalid-feedback">Please enter your password.</div>
+                          </div>
+                        </div>
+                  
+                        <!-- Repeat Password input -->
+
+                        <div class="col-md-12">
+                          <div class="form-outline mb-4">
+                            <input type="password" id="registerRepeatPassword" class="form-control" required />
+                            <label class="form-label" for="registerRepeatPassword">Repeat password</label>
+                            <div class="valid-feedback">Valid!</div>
+                            <div class="invalid-feedback">Please repeat your password.</div>
+                          </div>
+                        </div>
+                  
+                        <!-- Checkbox -->
+
+                        <div class="col-md-12">
+                          <div class="form-check d-flex justify-content-center mb-4">
+                            <input
+                              class="form-check-input me-2"
+                              type="checkbox"
+                              value=""
+                              id="registerCheck"
+                              checked
+                              aria-describedby="registerCheckHelpText"
+                              required
+                            />
+                            <label class="form-check-label" for="registerCheck">
+                              I have read and agree to the terms
+                            </label>
+                          </div>
+                        </div>
+                  
+                        <!-- Submit button -->
+
+                        <button type="submit" class="btn btn-primary btn-block mb-3">Sign Up</button>
+                      </form>
+                    </div>
+                  </div>
+
+                <!-- / Pills content -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- / Modal 1 -->
+
+    <!-- Modal 2 -->
+
+      <!-- Market -->
+
+        <div class="modal top fade" id="Market" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-mdb-backdrop="static" data-mdb-keyboard="true">
+          <div class="modal-dialog modal-xl  modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title text-success" id="exampleModalLabel">Markets</h5>
+                <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                
+                <div class="container">
+          
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="card text-center hover-shadow">
+                       <div class="shadow-1">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                          <img src="./img/cargillsnew.png" class="img-fluid" />
+                          <a href="#!">
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                          </a>
+                        </div>
+                      
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the
+                            card's content.
+                          </p>
+                          <a href="https://cargillsonline.com/Web/Product?IC=MjM=&NC=VmVnZXRhYmxlcw=="><button type="button" class="btn btn-success">Visit</button></a>
+                        </div>
+                       </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="card text-center hover-shadow">
+                       <div class="shadow-1">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                          <img src="./img/Keells.jpg" class="img-fluid" />
+                          <a href="#!">
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                          </a>
+                        </div>
+                      
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the
+                            card's content.
+                          </p>
+                          <a href="https://www.keellssuper.com/product/2/16/114"><button type="button" class="btn btn-success">Visit</button></a>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="card text-center hover-shadow">
+                       <div class="shadow-1">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                          <img src="./img/snapcartnew.png" class="img-fluid" />
+                          <a href="#!">
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                          </a>
+                        </div>
+                      
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the
+                            card's content.
+                          </p>
+                          <a href="http://snapcart.lk/category/531"><button type="button" class="btn btn-success">Visit</button></a>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!-- / Market -->
+
+      <!-- Store -->
+
+        <div class="modal top fade" id="Store" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-mdb-backdrop="static" data-mdb-keyboard="true">
+          <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title text-success" id="exampleModalLabel">Stores</h5>
+                <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                
+                <div class="container">
+          
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="card text-center hover-shadow">
+                       <div class="shadow-1">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                          <img src="./img/hayleysnew2.png" class="img-fluid" />
+                          <a href="#!">
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                          </a>
+                        </div>
+                      
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the
+                            card's content.
+                          </p>
+                          <a href="https://www.hayleysagriculture.com/main_category.php?business_id=3"><button type="button" class="btn btn-success">Visit</button></a>
+                        </div>
+                       </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="card text-center hover-shadow">
+                       <div class="shadow-1">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                          <img src="./img/dimo.png" class="img-fluid" />
+                          <a href="#!">
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                          </a>
+                        </div>
+                      
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the
+                            card's content.
+                          </p>
+                          <a href="https://www.dimolanka.com/agriculture/agri-machinery/"><button type="button" class="btn btn-success">Visit</button></a>
+                        </div>
+                       </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="card text-center hover-shadow">
+                       <div class="shadow-1">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                          <img src="./img/hayleysnew2.png" class="img-fluid" />
+                          <a href="#!">
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                          </a>
+                        </div>
+                      
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the
+                            card's content.
+                          </p>
+                          <a href="https://www.hayleysagriculture.com/main_category.php?business_id=5"><button type="button" class="btn btn-success">Visit</button></a>
+                        </div>
+
+                      </div>
+                    </div>
+                   </div>
+                  </div>
+                  
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!-- / Store -->
+
+   <!-- expert contact -->
+     <div class="modal top fade" id="contactx" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-mdb-backdrop="static" data-mdb-keyboard="true">
+          <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title text-success" id="exampleModalLabel">Send Your Message</h5>
+                <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                
+                
+        <div class="container">
+  	      <div>
+            <h3 align="center" class="mb-5">Contact Form</h3>
+            <form class="row g-3 needs-validation" novalidate>
+
+              <!-- Name input -->
+
+              <div class="col-md-6">
+                <div class="form-outline mb-4">
+                  <input type="text" id="form4Example1" class="form-control" required />
+                  <label class="form-label" for="form4Example1">Name</label>
+                  <div class="valid-feedback">Valid!</div>
+                    <div class="invalid-feedback">Please enter your name.</div>
+                  </div>
+                </div>
+      
+              <!-- Email input -->
+
+              <div class="col-md-6">
+                <div class="form-outline mb-4">
+                  <input type="email" id="form4Example2" class="form-control" required />
+                  <label class="form-label" for="form4Example2">Email address</label>
+                  <div class="valid-feedback">Valid!</div>
+                  <div class="invalid-feedback">Please enter your email address.</div>
+                </div>
+              </div>
+
+              <!-- Subject input -->
+
+              <div class="col-md-6">
+                <div class="form-outline mb-4">
+                  <input type="text" id="form4Example1" class="form-control" required />
+                  <label class="form-label" for="form4Example1">Subject Input</label>
+                  <div class="valid-feedback">Valid!</div>
+                  <div class="invalid-feedback">Please enter the subject.</div>
+                </div>
+              </div>
+
+              <!-- Contact Number -->
+
+              <div class="col-md-6">
+                <div class="form-outline mb-4">
+                  <input type="text" id="form4Example1" class="form-control" required />
+                  <label class="form-label" for="form4Example1">Contact Number</label>
+                  <div class="valid-feedback">Valid!</div>
+                  <div class="invalid-feedback">Please enter your contact number.</div>
+                </div>
+              </div>
+      
+              <!-- Message input -->
+
+              <div class="col-md-12">
+                <div class="form-outline mb-4">
+                  <textarea class="form-control" id="form4Example3" rows="4" required></textarea>
+                  <label class="form-label" for="form4Example3">Message</label>
+                  <div class="valid-feedback">Valid!</div>
+                  <div class="invalid-feedback">Please enter the message.</div>
+                </div>
+              </div>
+      
+              <!-- Checkbox -->
+
+              <div class="form-check d-flex justify-content-center mb-4">
+                <input
+                  class="form-check-input me-2"
+                  type="checkbox"
+                  value=""
+                  id="form4Example4"
+                />
+                <label class="form-check-label" for="form4Example4">
+                  Send me a copy of this message
+                </label>
+              </div>
+      
+              <!-- Submit button -->
+
+              <button type="submit" class="btn btn-success btn-block btn-lg">Send</button>
+
+            </form>
+          </div>
+        </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /expert contact -->
+
+    <!-- / Modal 2 -->
+
+  
+
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="./js/mdb.min.js.map"></script>
+    <script type="text/javascript" src="./js/signin.js"></script>
+    <script type="text/javascript" src="./js/popup.js"></script>
+    <script type="text/javascript" src="./js/clock.js"></script>
+    
+  </body>
+</html>
+<!--The Prodigies-2021-->
+
+
+
